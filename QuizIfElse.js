@@ -22,15 +22,15 @@ function scoreChecker(score) {
   let result;
   // TODO
 
-  if (score > 90) {
+  if (score >= 90) {
     result = "Selamat anda mendapatkan A";
-  } else if (score > 80 && score < 89) {
+  } else if (score >= 80 && score <= 89) {
     result = "Selamat anda mendapatkan B";
-  } else if (score > 70 && score < 79) {
+  } else if (score >= 70 && score <= 79) {
     result = "Selamat anda mendapatkan C";
-  } else if (score > 60 && score < 69) {
+  } else if (score >= 60 && score <= 69) {
     result = "Selamat anda mendapatkan D";
-  } else if (score < 60) {
+  } else if (score <= 60) {
     result = "Selamat anda mendapatkan E";
   }
 
@@ -45,4 +45,4 @@ scoreChecker(100);
 /**
  * Hiraukan kode di bawah ini
  */
-// module.exports = scoreChecker;
+module.exports = scoreChecker;
