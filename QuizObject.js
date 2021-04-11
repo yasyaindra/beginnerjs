@@ -32,12 +32,15 @@
 let restaurant = {
   name: "Hoka Hoka Bento",
   city: "Tangerang",
-  favoriteDrink: "Vanilla Ice",
-  favoriteFood: "Chicken Nugget",
+  "favorite drink": "Vanilla Ice",
+  "favorite food": "Chicken Nugget",
   isVegan: false,
 };
 
 let name = restaurant.name;
-let favoriteDrink = restaurant.favoriteDrink;
+let favoriteDrink = restaurant["favorite drink"];
+
+console.log(name);
+console.log(favoriteDrink);
 
 module.exports = { restaurant, name, favoriteDrink };
